@@ -119,6 +119,30 @@ class Bathu extends StatelessWidget {
                 height: 320,
                 child: Products(),
               ),
+              SizedBox(
+                height: 30,
+              ),
+              ElevatedButton(
+                child: Text(
+                  "VIEW ALL PRODUCTS",
+                  style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                      fontFamily: 'Gilroy-Regular.ttf'),
+                ),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xff1c1b1b),
+                  shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.circular(1)),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
             ],
           ),
         ]),

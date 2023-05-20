@@ -100,43 +100,47 @@ class SingleProduct extends StatelessWidget {
             child: GridTile(
               footer: Container(
                 color: Colors.white,
-                child: ListTile(
-                  leading: Column(
-                    children: [
-                      SizedBox(height: 3),
-                      Text(
-                        ProductName,
-                        style: TextStyle(
-                            fontFamily: 'Gilroy-Bold.ttf',
-                            fontSize: 8.1,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.2),
-                      ),
-                      SizedBox(height: 3),
-                      Center(
-                        child: Text(
-                          ' $Review Review',
+                child: Card(
+                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
+                  elevation: 2,
+                  child: ListTile(
+                    leading: Column(
+                      children: [
+                        SizedBox(height: 3),
+                        Text(
+                          ProductName,
                           style: TextStyle(
                               fontFamily: 'Gilroy-Bold.ttf',
-                              fontSize: 12,
-                              color: Colors.grey,
+                              fontSize: 8.1,
                               fontWeight: FontWeight.bold,
-                              letterSpacing: 1.5),
+                              letterSpacing: 1.2),
                         ),
-                      ),
-                      SizedBox(height: 3),
-                      Center(
-                        child: Text(
-                          'R $Price ZAR',
-                          style: TextStyle(
-                              fontFamily: 'Gilroy-Bold.ttf',
-                              fontSize: 12,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 3),
+                        SizedBox(height: 3),
+                        Center(
+                          child: Text(
+                            ' $Review Review',
+                            style: TextStyle(
+                                fontFamily: 'Gilroy-Bold.ttf',
+                                fontSize: 12,
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1.5),
+                          ),
                         ),
-                      ),
-                    ],
+                        SizedBox(height: 3),
+                        Center(
+                          child: Text(
+                            'R $Price ZAR',
+                            style: TextStyle(
+                                fontFamily: 'Gilroy-Bold.ttf',
+                                fontSize: 12,
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 3),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
