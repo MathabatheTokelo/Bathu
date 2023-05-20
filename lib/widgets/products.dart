@@ -101,13 +101,42 @@ class SingleProduct extends StatelessWidget {
               footer: Container(
                 color: Colors.white,
                 child: ListTile(
-                  leading: Text(
-                    ProductName,
-                    style: TextStyle(
-                        fontFamily: 'Gilroy-Bold.ttf',
-                        fontSize: 8.1,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.2),
+                  leading: Column(
+                    children: [
+                      SizedBox(height: 3),
+                      Text(
+                        ProductName,
+                        style: TextStyle(
+                            fontFamily: 'Gilroy-Bold.ttf',
+                            fontSize: 8.1,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1.2),
+                      ),
+                      SizedBox(height: 3),
+                      Center(
+                        child: Text(
+                          ' $Review Review',
+                          style: TextStyle(
+                              fontFamily: 'Gilroy-Bold.ttf',
+                              fontSize: 12,
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.5),
+                        ),
+                      ),
+                      SizedBox(height: 3),
+                      Center(
+                        child: Text(
+                          'R $Price ZAR',
+                          style: TextStyle(
+                              fontFamily: 'Gilroy-Bold.ttf',
+                              fontSize: 12,
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 3),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
