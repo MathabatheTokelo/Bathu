@@ -11,7 +11,7 @@ class Bathu extends StatelessWidget {
   List<String> images = [
     "assets/images/headerOne2.png",
     "assets/images/headerOne1.png",
-    "assets/images/headerOne3.png"
+    "assets/images/headerOne3.png",
   ];
 
   @override
@@ -113,9 +113,12 @@ class Bathu extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 2,
               ),
-              Container(height: 320, child: Products()),
+              Container(
+                height: 320,
+                child: Products(),
+              ),
             ],
           ),
         ]),

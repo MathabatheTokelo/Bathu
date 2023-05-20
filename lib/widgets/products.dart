@@ -26,6 +26,42 @@ class _ProductsState extends State<Products> {
       "picture": "assets/images/imageOne3.png",
       "reviews": 12,
       "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - GREY & BLACK",
+      "picture": "assets/images/imageOne4.png",
+      "reviews": 16,
+      "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - YELLOW",
+      "picture": "assets/images/imageOne5.png",
+      "reviews": 5,
+      "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - ARMY GREEN",
+      "picture": "assets/images/imageOne6.png",
+      "reviews": 6,
+      "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - SNOW WHITE",
+      "picture": "assets/images/imageOne7.png",
+      "reviews": 8,
+      "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - NUDE PINK",
+      "picture": "assets/images/imageOne8.png",
+      "reviews": 5,
+      "price": 1200,
+    },
+    {
+      "name": "SKY EDITION - NAVY BLUE",
+      "picture": "assets/images/imageOne9.png",
+      "reviews": 1,
+      "price": 1200,
     }
   ];
   @override
@@ -62,21 +98,21 @@ class SingleProduct extends StatelessWidget {
           child: InkWell(
             onTap: () {},
             child: GridTile(
-                footer: Container(
-                  color: Colors.white,
-                  child: ListTile(
-                    leading: Text(ProductName,
-                        style: TextStyle(
-                            fontFamily: 'Gilroy-Bold.ttf',
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5)),
+              footer: Container(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Text(
+                    ProductName,
+                    style: TextStyle(
+                        fontFamily: 'Gilroy-Bold.ttf',
+                        fontSize: 8.1,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1.2),
                   ),
                 ),
-                child: Image.asset(
-                  ProductPicture,
-                  fit: BoxFit.cover,
-                )),
+              ),
+              child: Image.asset(ProductPicture, fit: BoxFit.cover),
+            ),
           ),
         ),
       ),
