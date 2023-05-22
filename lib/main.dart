@@ -1,4 +1,5 @@
 import 'package:bathu/widgets/products.dart';
+import 'package:bathu/widgets/secondGrid.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,7 @@ class Bathu extends StatelessWidget {
   Bathu({Key? key}) : super(key: key);
 
   List<String> images = [
+    "assets/images/headerOne4.png",
     "assets/images/headerOne2.png",
     "assets/images/headerOne1.png",
     "assets/images/headerOne3.png",
@@ -146,6 +148,8 @@ class Bathu extends StatelessWidget {
                   SizedBox(
                     height: 30,
                   ),
+                  SecondGrid(),
+                  //
                 ]),
               ),
             ),
