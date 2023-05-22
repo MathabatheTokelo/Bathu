@@ -71,6 +71,9 @@ class Bathu extends StatelessWidget {
                     width: 220,
                   ),
                 ),
+                SizedBox(
+                  width: 3,
+                ),
                 Icon(Icons.person, color: Colors.black, size: 23),
                 SizedBox(
                   width: 3,
