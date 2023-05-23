@@ -11,8 +11,6 @@ void main() {
 }
 
 class Bathu extends StatelessWidget {
-  Bathu({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,10 +46,9 @@ class Bathu extends StatelessWidget {
                   SizedBox(height: 350, child: Products()),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL PRODUCTS"),
-                  SizedBox(
-                    height: 30,
-                  ),
+                  SizedBox(height: 30),
                   SecondGrid(),
+                  SizedBox(height: 30),
                   //
                 ]),
               ),

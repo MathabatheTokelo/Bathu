@@ -28,20 +28,21 @@ class CustomAppBar extends StatelessWidget {
         const SizedBox(width: 45),
         InkWell(
           onTap: () {},
-          child: Icon(Icons.person, color: Colors.black, size: 20),
+          child: Icon(Icons.person, color: Color(0xff1c1b1b), size: 20),
         ),
         SizedBox(
           width: 5,
         ),
         InkWell(
             onTap: () {},
-            child: Icon(Icons.search, color: Colors.black, size: 20)),
+            child: Icon(Icons.search, color: Color(0xff1c1b1b), size: 20)),
         SizedBox(
           width: 5,
         ),
         InkWell(
             onTap: () {},
-            child: Icon(Icons.shopping_cart, color: Colors.black, size: 20)),
+            child:
+                Icon(Icons.shopping_cart, color: Color(0xff1c1b1b), size: 20)),
       ],
     );
   }

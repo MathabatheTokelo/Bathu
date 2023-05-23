@@ -91,60 +91,59 @@ class SingleProduct extends StatelessWidget {
       {this.ProductPicture, this.ProductName, this.Review, this.Price});
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return SizedBox(
       child: Hero(
         tag: ProductName,
         child: Material(
           child: InkWell(
             onTap: () {},
             child: GridTile(
+              child: Image.asset(ProductPicture, fit: BoxFit.cover),
               footer: Container(
-                color: Colors.white,
-                child: Card(
-                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Column(
-                      children: [
-                        SizedBox(height: 3),
-                        Text(
-                          ProductName,
-                          style: const TextStyle(
-                              fontFamily: 'Gilroy-Bold.ttf',
-                              fontSize: 8,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 1.2),
-                        ),
-                        SizedBox(height: 3),
-                        Center(
-                          child: Text(
-                            ' $Review Review',
-                            style: TextStyle(
-                                fontFamily: 'Gilroy-Bold.ttf',
-                                fontSize: 12,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 1.5),
-                          ),
-                        ),
-                        SizedBox(height: 3),
-                        Center(
-                          child: Text(
-                            'R $Price ZAR',
-                            style: TextStyle(
-                                fontFamily: 'Gilroy-Bold.ttf',
-                                fontSize: 12,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 3),
-                          ),
-                        ),
-                      ],
+                height: 60,
+                color: Colors.white70,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 15,
                     ),
-                  ),
+                    Text(
+                      ProductName,
+                      style: TextStyle(
+                        fontFamily: 'Gilroy-Bold.ttf',
+                        fontSize: 9,
+                        color: Color(0xff1c1b1b),
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 2,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 3,
+                    ),
+                    Text(
+                      ' $Review Review',
+                      style: TextStyle(
+                          fontFamily: 'Gilroy-Bold.ttf',
+                          fontSize: 9,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5),
+                    ),
+                    SizedBox(
+                      height: 3,
+                    ),
+                    Text(
+                      'R $Price ZAR',
+                      style: TextStyle(
+                          fontFamily: 'Gilroy-Bold.ttf',
+                          fontSize: 11,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2),
+                    )
+                  ],
                 ),
               ),
-              child: Image.asset(ProductPicture, fit: BoxFit.cover),
             ),
           ),
         ),
