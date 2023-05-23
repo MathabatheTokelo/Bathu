@@ -102,16 +102,16 @@ class SingleProduct extends StatelessWidget {
                 color: Colors.white,
                 child: Card(
                   margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                  elevation: 2,
+                  elevation: 5,
                   child: ListTile(
                     leading: Column(
                       children: [
                         SizedBox(height: 3),
                         Text(
                           ProductName,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontFamily: 'Gilroy-Bold.ttf',
-                              fontSize: 8.1,
+                              fontSize: 8,
                               fontWeight: FontWeight.bold,
                               letterSpacing: 1.2),
                         ),

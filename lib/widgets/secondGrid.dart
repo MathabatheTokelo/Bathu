@@ -23,22 +23,25 @@ class SecondGrid extends StatelessWidget {
         Row(
           children: [
             SizedBox(
-              width: 1,
+              width: 10,
             ),
             Container(
-              width: 190,
+              width: 180,
               height: 244,
               child: Card(
                 elevation: 5,
-                child: Image.asset("assets/images/imageTwo1.jpg",
-                    fit: BoxFit.cover, alignment: Alignment.bottomCenter),
+                child: Image.asset(
+                  "assets/images/imageTwo1.jpg",
+                  fit: BoxFit.cover,
+                  alignment: Alignment.bottomCenter,
+                ),
               ),
             ),
             SizedBox(
               width: 2,
             ),
             Container(
-              width: 199,
+              width: 193,
               child: Card(
                 elevation: 5,
                 child: Column(
@@ -55,7 +58,7 @@ class SecondGrid extends StatelessWidget {
         ),
         SizedBox(height: 2),
         Container(
-          width: 210,
+          width: 200,
           height: 244,
           child: Card(
             child: Image.asset(

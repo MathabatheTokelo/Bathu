@@ -1,3 +1,7 @@
+import 'package:bathu/widgets/button.dart';
+import 'package:bathu/widgets/customAppBar.dart';
+import 'package:bathu/widgets/headingTextWidget.dart';
+import 'package:bathu/widgets/posterSection.dart';
 import 'package:bathu/widgets/products.dart';
 import 'package:bathu/widgets/secondGrid.dart';
 import 'package:flutter/material.dart';
@@ -9,13 +13,6 @@ void main() {
 class Bathu extends StatelessWidget {
   Bathu({Key? key}) : super(key: key);
 
-  List<String> images = [
-    "assets/images/headerOne4.png",
-    "assets/images/headerOne2.png",
-    "assets/images/headerOne1.png",
-    "assets/images/headerOne3.png",
-  ];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,131 +20,34 @@ class Bathu extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          toolbarHeight: 20,
-          title: Center(
+          toolbarHeight: 18,
+          title: const Center(
             child: Text(
               "WISHING YOU ALL THE BEST FOR 2023 | FIND A STORE | EMAIL US ON INFO@BATHU.CO.ZA",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 8.3,
+                fontSize: 7.5,
+                letterSpacing: 0.5,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Gilroy-Bold',
               ),
             ),
           ),
-          elevation: 20,
+          elevation: 10,
         ),
         body: Column(
           children: [
-            Row(
-              children: [
-                SizedBox(
-                  width: 13.5,
-                ),
-                InkWell(
-                  onTap: () {
-                    Drawer(
-                      child: ListView(
-                        children: [
-                          Text("Tokelo"),
-                        ],
-                      ),
-                    );
-                  },
-                  child: Icon(
-                    Icons.menu,
-                    color: Colors.grey,
-                    size: 25,
-                  ),
-                ),
-                SizedBox(
-                  width: 50,
-                ),
-                Container(
-                  height: 130,
-                  child: Image.asset(
-                    'assets/images/logo.png',
-                    height: 240,
-                    width: 220,
-                  ),
-                ),
-                SizedBox(
-                  width: 3,
-                ),
-                Icon(Icons.person, color: Colors.black, size: 23),
-                SizedBox(
-                  width: 3,
-                ),
-                Icon(Icons.search, color: Colors.black, size: 23),
-                SizedBox(
-                  width: 3,
-                ),
-                Icon(Icons.shopping_cart, color: Colors.black, size: 23),
-              ],
-            ),
+            const CustomAppBar(),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(children: [
-                  SizedBox(
-                    height: 250,
-                    width: double.infinity,
-                    child: PageView.builder(
-                      itemCount: images.length,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 7),
-                          child: SizedBox(
-                            height: 400,
-                            width: double.infinity,
-                            child: Image.asset(
-                              images[index],
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    "SKY EDITION",
-                    style: TextStyle(
-                      fontFamily: 'Gilroy-Regular.ttf',
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 4.0,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 2,
-                  ),
-                  Container(
-                    height: 320,
-                    child: Products(),
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  ElevatedButton(
-                    child: Text(
-                      "VIEW ALL PRODUCTS",
-                      style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 2,
-                          fontFamily: 'Gilroy-Regular.ttf'),
-                    ),
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      primary: Color(0xff1c1b1b),
-                      shape: BeveledRectangleBorder(
-                        borderRadius: BorderRadius.circular(1),
-                      ),
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 20.0),
-                    ),
-                  ),
+                  PosterSection(),
+                  const SizedBox(height: 20),
+                  HeadingTextWidget(st: "SKY EDITION"),
+                  const SizedBox(height: 2),
+                  SizedBox(height: 350, child: Products()),
+                  const SizedBox(height: 30),
+                  Button(st: "VIEW ALL PRODUCTS"),
                   SizedBox(
                     height: 30,
                   ),
