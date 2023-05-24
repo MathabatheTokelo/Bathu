@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_carousel_slider/flutter_custom_carousel_slider.dart';
 
 class PosterSection extends StatefulWidget {
   @override
@@ -7,32 +8,49 @@ class PosterSection extends StatefulWidget {
 
 class _PosterSectionState extends State<PosterSection> {
   @override
-  List<String> images = [
-    "assets/images/headerOne4.png",
-    "assets/images/headerOne2.png",
-    "assets/images/headerOne1.png",
-    "assets/images/headerOne3.png"
+  var itemList = [
+    CarouselItem(
+      image: const AssetImage("assets/images/headerOne4.png"),
+      boxDecoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: FractionalOffset.bottomCenter,
+          end: FractionalOffset.topCenter,
+          colors: [
+            Color.fromARGB(255, 255, 168, 68).withOpacity(1),
+            Color.fromARGB(255, 43, 58, 37).withOpacity(.3),
+          ],
+          stops: const [0.0, 1.0],
+        ),
+      ),
+      onImageTap: (i) {},
+    ),
+    CarouselItem(
+      image: const AssetImage("assets/images/headerOne2.png"),
+      onImageTap: (i) {},
+    ),
+    CarouselItem(
+      image: const AssetImage("assets/images/headerOne1.png"),
+      onImageTap: (i) {},
+    ),
+    CarouselItem(
+      image: const AssetImage("assets/images/headerOne3.png"),
+      onImageTap: (i) {},
+    )
   ];
 
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 250,
-      width: double.infinity,
-      child: PageView.builder(
-        itemCount: images.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 7),
-            child: SizedBox(
-              height: 400,
-              width: double.infinity,
-              child: Image.asset(
-                images[index],
-                fit: BoxFit.cover,
-              ),
-            ),
-          );
-        },
+    return Center(
+      child: Container(
+        alignment: Alignment.topCenter,
+        child: CustomCarouselSlider(
+          dotSpacing: 5,
+          selectedDotColor: Color(0xff1c1b1b),
+          items: itemList,
+          height: 360,
+          subHeight: 0,
+          width: 400,
+          autoplay: true,
+        ),
       ),
     );
   }

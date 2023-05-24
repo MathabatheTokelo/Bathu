@@ -10,11 +10,11 @@ class CustomAppBar extends StatelessWidget {
         const SizedBox(width: 13.5),
         InkWell(
           onTap: () {
-            Drawer();
+            const Drawer();
           },
           child: const Icon(Icons.menu, color: Colors.grey, size: 25),
         ),
-        const SizedBox(width: 80),
+        const SizedBox(width: 90),
         SizedBox(
           height: 100,
           child: Image.asset(
@@ -25,24 +25,22 @@ class CustomAppBar extends StatelessWidget {
             width: 145,
           ),
         ),
-        const SizedBox(width: 45),
+        const SizedBox(width: 55),
         InkWell(
           onTap: () {},
-          child: Icon(Icons.person, color: Color(0xff1c1b1b), size: 20),
+          child: const Icon(Icons.person, color: Color(0xff1c1b1b), size: 20),
         ),
-        SizedBox(
-          width: 5,
-        ),
+        const SizedBox(width: 5),
         InkWell(
-            onTap: () {},
-            child: Icon(Icons.search, color: Color(0xff1c1b1b), size: 20)),
-        SizedBox(
-          width: 5,
+          onTap: () {},
+          child: const Icon(Icons.search, color: Color(0xff1c1b1b), size: 20),
         ),
+        const SizedBox(width: 5),
         InkWell(
-            onTap: () {},
-            child:
-                Icon(Icons.shopping_cart, color: Color(0xff1c1b1b), size: 20)),
+          onTap: () {},
+          child: const Icon(Icons.shopping_cart,
+              color: Color(0xff1c1b1b), size: 20),
+        ),
       ],
     );
   }

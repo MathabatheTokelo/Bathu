@@ -98,43 +98,35 @@ class SingleProduct extends StatelessWidget {
           child: InkWell(
             onTap: () {},
             child: GridTile(
-              child: Image.asset(ProductPicture, fit: BoxFit.cover),
               footer: Container(
                 height: 60,
                 color: Colors.white70,
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: 15,
-                    ),
+                    const SizedBox(height: 15),
                     Text(
                       ProductName,
-                      style: TextStyle(
-                        fontFamily: 'Gilroy-Bold.ttf',
-                        fontSize: 9,
-                        color: Color(0xff1c1b1b),
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 2,
-                      ),
+                      style: const TextStyle(
+                          fontFamily: 'Gilroy-Bold.ttf',
+                          fontSize: 9,
+                          color: Color(0xff1c1b1b),
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2),
                     ),
-                    SizedBox(
-                      height: 3,
-                    ),
+                    const SizedBox(height: 3),
                     Text(
                       ' $Review Review',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontFamily: 'Gilroy-Bold.ttf',
                           fontSize: 9,
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1.5),
                     ),
-                    SizedBox(
-                      height: 3,
-                    ),
+                    const SizedBox(height: 3),
                     Text(
                       'R $Price ZAR',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontFamily: 'Gilroy-Bold.ttf',
                           fontSize: 11,
                           color: Colors.grey,
@@ -144,6 +136,7 @@ class SingleProduct extends StatelessWidget {
                   ],
                 ),
               ),
+              child: Image.asset(ProductPicture, fit: BoxFit.cover),
             ),
           ),
         ),

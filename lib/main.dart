@@ -38,17 +38,36 @@ class Bathu extends StatelessWidget {
             const CustomAppBar(),
             Expanded(
               child: SingleChildScrollView(
+                padding: EdgeInsets.all(0),
                 child: Column(children: [
                   PosterSection(),
                   const SizedBox(height: 20),
                   HeadingTextWidget(st: "SKY EDITION"),
-                  const SizedBox(height: 2),
+                  const SizedBox(height: 10),
                   SizedBox(height: 350, child: Products()),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL PRODUCTS"),
-                  SizedBox(height: 30),
-                  SecondGrid(),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
+                  Column(
+                    children: [SecondGrid(), SecondGrid()],
+                  ),
+                  const SizedBox(height: 40),
+                  const Text(
+                    "THE ORIGINAL.",
+                    style: TextStyle(
+                        color: Color(0xff1c1b1b),
+                        fontSize: 10,
+                        letterSpacing: 4,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Gilroy-Bold'),
+                  ),
+                  const SizedBox(height: 17),
+                  HeadingTextWidget(st: "MESH EDITION - AFRICA'S SNEAKER."),
+                  const SizedBox(height: 10),
+                  SizedBox(height: 350, child: Products()),
+                  const SizedBox(height: 30),
+                  Button(st: "VIEW ALL MESH EDITION SNEAKERS"),
+                  const SizedBox(height: 30),
                   //
                 ]),
               ),
