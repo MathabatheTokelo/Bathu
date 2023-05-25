@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
+
+import '../pages/productDetails.dart';
+
 class Products extends StatefulWidget {
   Products({Key? key}) : super(key: key);
 
@@ -64,6 +68,7 @@ class _ProductsState extends State<Products> {
       "price": 1200,
     }
   ];
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -83,6 +88,7 @@ class _ProductsState extends State<Products> {
 }
 
 class SingleProduct extends StatelessWidget {
+  double value = 5.0;
   var ProductName;
   var ProductPicture;
   var Review;
@@ -96,7 +102,11 @@ class SingleProduct extends StatelessWidget {
         tag: ProductName,
         child: Material(
           child: InkWell(
-            onTap: () {},
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => ProductDetails(),
+              ),
+            ),
             child: GridTile(
               footer: Container(
                 height: 60,
@@ -114,21 +124,39 @@ class SingleProduct extends StatelessWidget {
                           letterSpacing: 2),
                     ),
                     const SizedBox(height: 3),
-                    Text(
-                      ' $Review Review',
-                      style: const TextStyle(
-                          fontFamily: 'Gilroy-Bold.ttf',
-                          fontSize: 9,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5),
+                    Center(
+                      child: Row(
+                        children: [
+                          const SizedBox(width: 45),
+                          SmoothStarRating(
+                              allowHalfRating: false,
+                              onRatingChanged: (v) {},
+                              starCount: 5,
+                              rating: 5.0,
+                              size: 12.0,
+                              filledIconData: Icons.star,
+                              halfFilledIconData: Icons.star,
+                              color: Colors.yellow,
+                              borderColor: Colors.black,
+                              spacing: 0.0),
+                          Text(
+                            ' $Review Reviews',
+                            style: const TextStyle(
+                                fontFamily: 'Gilroy-Bold.ttf',
+                                fontSize: 9,
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1.5),
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 3),
                     Text(
                       'R $Price ZAR',
                       style: const TextStyle(
                           fontFamily: 'Gilroy-Bold.ttf',
-                          fontSize: 11,
+                          fontSize: 12,
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2),

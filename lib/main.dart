@@ -1,9 +1,9 @@
 import 'package:bathu/widgets/button.dart';
 import 'package:bathu/widgets/customAppBar.dart';
 import 'package:bathu/widgets/headingTextWidget.dart';
-import 'package:bathu/widgets/posterSection.dart';
-import 'package:bathu/widgets/products.dart';
-import 'package:bathu/widgets/secondGrid.dart';
+import 'package:bathu/components/posterSection.dart';
+import 'package:bathu/components/products.dart';
+import 'package:bathu/components/secondGrid.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,7 +38,6 @@ class Bathu extends StatelessWidget {
             const CustomAppBar(),
             Expanded(
               child: SingleChildScrollView(
-                padding: EdgeInsets.all(0),
                 child: Column(children: [
                   PosterSection(),
                   const SizedBox(height: 20),
