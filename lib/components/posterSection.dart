@@ -39,19 +39,26 @@ class _PosterSectionState extends State<PosterSection> {
   ];
 
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        alignment: Alignment.topCenter,
-        child: CustomCarouselSlider(
-          dotSpacing: 5,
-          selectedDotColor: Color(0xff1c1b1b),
-          items: itemList,
-          height: 360,
-          subHeight: 0,
-          width: 400,
-          autoplay: true,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              child: CustomCarouselSlider(
+                dotSpacing: 5,
+                selectedDotColor: Color(0xff1c1b1b),
+                items: itemList,
+                height: 350,
+                subHeight: 0,
+                width: 400,
+                autoplay: true,
+              ),
+            ),
+          ],
         ),
-      ),
+      ],
     );
   }
 }

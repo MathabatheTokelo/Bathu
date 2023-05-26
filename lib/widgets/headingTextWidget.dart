@@ -11,7 +11,7 @@ class HeadingTextWidget extends StatelessWidget {
       style: const TextStyle(
         fontFamily: 'Gilroy-Regular.ttf',
         fontWeight: FontWeight.bold,
-        letterSpacing: 4.0,
+        letterSpacing: 3.4,
       ),
     );
   }

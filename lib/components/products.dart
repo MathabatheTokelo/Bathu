@@ -1,3 +1,4 @@
+import 'package:bathu/models/productList.dart';
 import 'package:flutter/material.dart';
 
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
@@ -5,82 +6,26 @@ import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.da
 import '../pages/productDetails.dart';
 
 class Products extends StatefulWidget {
-  Products({Key? key}) : super(key: key);
+  var products;
+  Products({required this.products});
 
   @override
   State<Products> createState() => _ProductsState();
 }
 
 class _ProductsState extends State<Products> {
-  var productList = [
-    {
-      "name": "SKY EDITION - RED",
-      "picture": "assets/images/imageOne1.png",
-      "reviews": 14,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - MIDNIGHT BLACK",
-      "picture": "assets/images/imageOne2.png",
-      "reviews": 31,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - LIGHT BLUE",
-      "picture": "assets/images/imageOne3.png",
-      "reviews": 12,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - GREY & BLACK",
-      "picture": "assets/images/imageOne4.png",
-      "reviews": 16,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - YELLOW",
-      "picture": "assets/images/imageOne5.png",
-      "reviews": 5,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - ARMY GREEN",
-      "picture": "assets/images/imageOne6.png",
-      "reviews": 6,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - SNOW WHITE",
-      "picture": "assets/images/imageOne7.png",
-      "reviews": 8,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - NUDE PINK",
-      "picture": "assets/images/imageOne8.png",
-      "reviews": 5,
-      "price": 1200,
-    },
-    {
-      "name": "SKY EDITION - NAVY BLUE",
-      "picture": "assets/images/imageOne9.png",
-      "reviews": 1,
-      "price": 1200,
-    }
-  ];
-
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: productList.length,
+      itemCount: widget.products.length,
       gridDelegate:
           SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
         return SingleProduct(
-          ProductName: productList[index]['name'],
-          ProductPicture: productList[index]['picture'],
-          Price: productList[index]['price'],
-          Review: productList[index]['reviews'],
+          ProductName: widget.products[index]['name'],
+          ProductPicture: widget.products[index]['picture'],
+          Price: widget.products[index]['price'],
+          Review: widget.products[index]['reviews'],
         );
       },
     );
@@ -94,7 +39,12 @@ class SingleProduct extends StatelessWidget {
   var Review;
   var Price;
   SingleProduct(
-      {this.ProductPicture, this.ProductName, this.Review, this.Price});
+      {Key? key,
+      this.ProductPicture,
+      this.ProductName,
+      this.Review,
+      this.Price})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -118,7 +68,7 @@ class SingleProduct extends StatelessWidget {
                       ProductName,
                       style: const TextStyle(
                           fontFamily: 'Gilroy-Bold.ttf',
-                          fontSize: 9,
+                          fontSize: 8,
                           color: Color(0xff1c1b1b),
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2),

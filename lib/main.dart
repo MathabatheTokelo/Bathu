@@ -1,3 +1,4 @@
+import 'package:bathu/models/productList.dart';
 import 'package:bathu/widgets/button.dart';
 import 'package:bathu/widgets/customAppBar.dart';
 import 'package:bathu/widgets/headingTextWidget.dart';
@@ -11,6 +12,7 @@ void main() {
 }
 
 class Bathu extends StatelessWidget {
+  ProductList products = ProductList();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +26,7 @@ class Bathu extends StatelessWidget {
               "WISHING YOU ALL THE BEST FOR 2023 | FIND A STORE | EMAIL US ON INFO@BATHU.CO.ZA",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 7.5,
+                fontSize: 6,
                 letterSpacing: 0.5,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Gilroy-Bold',
@@ -43,7 +45,10 @@ class Bathu extends StatelessWidget {
                   const SizedBox(height: 20),
                   HeadingTextWidget(st: "SKY EDITION"),
                   const SizedBox(height: 10),
-                  SizedBox(height: 350, child: Products()),
+                  SizedBox(
+                    height: 350,
+                    child: Products(products: products.productList1),
+                  ),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL PRODUCTS"),
                   const SizedBox(height: 30),
@@ -60,13 +65,24 @@ class Bathu extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Gilroy-Bold'),
                   ),
-                  const SizedBox(height: 17),
+                  const SizedBox(height: 10),
                   HeadingTextWidget(st: "MESH EDITION - AFRICA'S SNEAKER."),
                   const SizedBox(height: 10),
-                  SizedBox(height: 350, child: Products()),
+                  SizedBox(
+                    height: 350,
+                    child: Products(products: products.productList2),
+                  ),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL MESH EDITION SNEAKERS"),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 35),
+                  const Text(
+                    "WHAT OUR CUSTOMERS SAY...",
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Gilroy-Bold',
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 4),
+                  ),
                   //
                 ]),
               ),
