@@ -7,6 +7,8 @@ import 'package:bathu/components/products.dart';
 import 'package:bathu/components/secondGrid.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/about.dart';
+
 void main() {
   runApp(Bathu());
 }
@@ -47,13 +49,21 @@ class Bathu extends StatelessWidget {
                   const SizedBox(height: 10),
                   SizedBox(
                     height: 350,
-                    child: Products(products: products.productList1),
+                    child: Products(productss: products.productList1),
                   ),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL PRODUCTS"),
                   const SizedBox(height: 30),
                   Column(
-                    children: [SecondGrid(), SecondGrid()],
+                    children: [
+                      Card(child: SecondGrid(), elevation: 10),
+                      Card(
+                        elevation: 10,
+                        color: Colors.black,
+                      ),
+                      SizedBox(height: 10),
+                      About()
+                    ],
                   ),
                   const SizedBox(height: 40),
                   const Text(
@@ -70,7 +80,7 @@ class Bathu extends StatelessWidget {
                   const SizedBox(height: 10),
                   SizedBox(
                     height: 350,
-                    child: Products(products: products.productList2),
+                    child: Products(productss: products.productList2),
                   ),
                   const SizedBox(height: 30),
                   Button(st: "VIEW ALL MESH EDITION SNEAKERS"),

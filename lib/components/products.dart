@@ -6,8 +6,8 @@ import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.da
 import '../pages/productDetails.dart';
 
 class Products extends StatefulWidget {
-  var products;
-  Products({required this.products});
+  var productss;
+  Products({required this.productss});
 
   @override
   State<Products> createState() => _ProductsState();
@@ -17,15 +17,15 @@ class _ProductsState extends State<Products> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: widget.products.length,
+      itemCount: widget.productss.length,
       gridDelegate:
           SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
         return SingleProduct(
-          ProductName: widget.products[index]['name'],
-          ProductPicture: widget.products[index]['picture'],
-          Price: widget.products[index]['price'],
-          Review: widget.products[index]['reviews'],
+          ProductName: widget.productss[index]['name'],
+          ProductPicture: widget.productss[index]['picture'],
+          Price: widget.productss[index]['price'],
+          Review: widget.productss[index]['reviews'],
         );
       },
     );

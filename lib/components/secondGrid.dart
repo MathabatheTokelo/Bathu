@@ -54,7 +54,7 @@ class _SecondGridState extends State<SecondGrid> {
                   Image.asset(
                     llist[index].picture,
                     fit: BoxFit.fill,
-                    width: 385,
+                    width: 368,
                     height: 480,
                   ),
                   Column(

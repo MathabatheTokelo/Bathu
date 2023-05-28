@@ -76,7 +76,7 @@ class ProductList {
       "price": 1200,
     },
     {
-      "name": "MESH EDITION - FULL ARMY GREEN",
+      "name": "MESH EDITION - ARMY GREEN",
       "picture": "assets/images/imageTwo8.png",
       "reviews": 5,
       "price": 1200,
@@ -88,7 +88,7 @@ class ProductList {
       "price": 1200,
     },
     {
-      "name": "MESH EDITION - YELLOW STRIPED",
+      "name": "MESH EDITION - YELLOW",
       "picture": "assets/images/imageTwo4.png",
       "reviews": 6,
       "price": 1200,
