@@ -11,7 +11,7 @@ class HistoryText extends StatelessWidget {
           color: Colors.white,
           fontFamily: 'Gilroy-Bold',
           fontWeight: FontWeight.bold,
-          fontSize: 10,
+          fontSize: 9,
           letterSpacing: 1.3),
     );
   }

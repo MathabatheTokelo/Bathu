@@ -19,6 +19,7 @@ class AboutList {
       "secparagraph3":
           "and Thembisa from the boot of his car and sold out within a",
       "secparagraph4": "few days.",
+      "secparagraph5": " ",
       "thirdparagraph1":
           "Today, Mesh Edition is widely recognised as Africa's first.",
       "thirdparagraph2": "homegrown sneaker.",

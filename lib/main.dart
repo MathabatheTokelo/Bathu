@@ -1,3 +1,4 @@
+import 'package:bathu/components/CustomerSection.dart';
 import 'package:bathu/models/productList.dart';
 import 'package:bathu/widgets/button.dart';
 import 'package:bathu/widgets/customAppBar.dart';
@@ -99,6 +100,7 @@ class _BathuState extends State<Bathu> {
                         fontWeight: FontWeight.bold,
                         letterSpacing: 4),
                   ),
+                  CustomerSection(),
                   //
                 ]),
               ),
