@@ -19,7 +19,7 @@ class _ProductsState extends State<Products> {
     return GridView.builder(
       itemCount: widget.productss.length,
       gridDelegate:
-          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
         return SingleProduct(
           ProductName: widget.productss[index]['name'],

@@ -27,7 +27,7 @@ class AboutList {
     },
     {
       "name": "2018",
-      "picture": "assets/images/imageThree1.png",
+      "picture": "assets/images/logo.png",
       "firstLine": "BATHU STORE #1",
       "SecondLine": "NEWTOWN STORE OPENS",
       "ThirdLine": " ",

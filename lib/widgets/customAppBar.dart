@@ -1,3 +1,5 @@
+import 'package:bathu/pages/cart.dart';
+import 'package:bathu/pages/profile.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -15,8 +17,8 @@ class CustomAppBar extends StatelessWidget {
           },
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(Icons.menu, color: Colors.grey, size: 25),
+            children: const [
+              Icon(Icons.menu, color: Colors.grey, size: 25),
             ],
           ),
         ),
@@ -42,7 +44,11 @@ class CustomAppBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Profile(),
+                  ),
+                ),
                 child: const Icon(Icons.person,
                     color: Color(0xff1c1b1b), size: 20),
               ),
@@ -54,7 +60,11 @@ class CustomAppBar extends StatelessWidget {
               ),
               const SizedBox(width: 5),
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Cart(),
+                  ),
+                ),
                 child: const Icon(Icons.shopping_cart,
                     color: Color(0xff1c1b1b), size: 20),
               ),

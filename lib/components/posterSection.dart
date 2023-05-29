@@ -11,17 +11,6 @@ class _PosterSectionState extends State<PosterSection> {
   var itemList = [
     CarouselItem(
       image: const AssetImage("assets/images/headerOne4.png"),
-      boxDecoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: FractionalOffset.bottomCenter,
-          end: FractionalOffset.topCenter,
-          colors: [
-            Color.fromARGB(255, 255, 168, 68).withOpacity(1),
-            Color.fromARGB(255, 43, 58, 37).withOpacity(.3),
-          ],
-          stops: const [0.0, 1.0],
-        ),
-      ),
       onImageTap: (i) {},
     ),
     CarouselItem(
@@ -48,7 +37,7 @@ class _PosterSectionState extends State<PosterSection> {
             SizedBox(
               child: CustomCarouselSlider(
                 dotSpacing: 5,
-                selectedDotColor: Color(0xff1c1b1b),
+                selectedDotColor: const Color(0xff1c1b1b),
                 items: itemList,
                 height: 350,
                 subHeight: 0,

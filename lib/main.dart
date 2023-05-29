@@ -7,14 +7,20 @@ import 'package:bathu/components/products.dart';
 import 'package:bathu/components/secondGrid.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/about.dart';
+import 'components/history.dart';
 
 void main() {
   runApp(Bathu());
 }
 
-class Bathu extends StatelessWidget {
+class Bathu extends StatefulWidget {
+  @override
+  State<Bathu> createState() => _BathuState();
+}
+
+class _BathuState extends State<Bathu> {
   ProductList products = ProductList();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -56,12 +62,12 @@ class Bathu extends StatelessWidget {
                   const SizedBox(height: 30),
                   Column(
                     children: [
-                      Card(child: SecondGrid(), elevation: 10),
-                      Card(
+                      Card(elevation: 10, child: SecondGrid()),
+                      const Card(
                         elevation: 10,
                         color: Colors.black,
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       About()
                     ],
                   ),

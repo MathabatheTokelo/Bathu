@@ -62,7 +62,7 @@ class _SecondGridState extends State<SecondGrid> {
                       SizedBox(height: 250),
                       Text(
                         llist[index].slogan,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 12,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -71,24 +71,16 @@ class _SecondGridState extends State<SecondGrid> {
                       ),
                       Text(
                         llist[index].name,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 18,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Gilroy-Bold',
                             letterSpacing: 2),
                       ),
-                      SizedBox(height: 50),
-                      SizedBox(width: 200),
+                      const SizedBox(height: 50),
+                      const SizedBox(width: 200),
                       ElevatedButton(
-                        child: Text(
-                          "VIEW PRODUCT",
-                          style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 2,
-                              fontFamily: 'Gilroy-Regular.ttf'),
-                        ),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           primary: Colors.white70,
@@ -96,8 +88,16 @@ class _SecondGridState extends State<SecondGrid> {
                           shape: BeveledRectangleBorder(
                             borderRadius: BorderRadius.circular(0),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               horizontal: 23.0, vertical: 18.0),
+                        ),
+                        child: const Text(
+                          "VIEW PRODUCT",
+                          style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 2,
+                              fontFamily: 'Gilroy-Regular.ttf'),
                         ),
                       ),
                     ],

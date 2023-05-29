@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ProductDetails extends StatefulWidget {
-  @override
-  State<ProductDetails> createState() => _ProductDetailsState();
-}
+class Profile extends StatelessWidget {
+  const Profile({Key? key}) : super(key: key);
 
-class _ProductDetailsState extends State<ProductDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
