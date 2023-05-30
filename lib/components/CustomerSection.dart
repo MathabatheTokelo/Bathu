@@ -30,7 +30,7 @@ class _CustomerSectionState extends State<CustomerSection> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      width: 300,
+      width: 350,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -44,10 +44,10 @@ class _CustomerSectionState extends State<CustomerSection> {
                   autoplayDuration: Duration(seconds: 4),
                   selectedDotColor: const Color(0xff1c1b1b),
                   items: itemList,
-                  height: 250,
+                  height: 350,
                   subHeight: 0,
                   unselectedDotWidth: 0,
-                  width: 350,
+                  width: 400,
                   autoplay: true,
                 ),
               ),

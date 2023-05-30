@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_custom_carousel_slider: ^1.2.0
   smooth_star_rating_null_safety: ^1.0.4+2
+
  
 
   
