@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class HeadingTextWidget extends StatelessWidget {
   var st;
-  HeadingTextWidget({Key? key, this.st}) : super(key: key);
+  HeadingTextWidget({this.st});
   @override
   Widget build(BuildContext context) {
     return Text(
