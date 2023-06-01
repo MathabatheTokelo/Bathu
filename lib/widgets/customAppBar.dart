@@ -1,5 +1,5 @@
 import 'package:bathu/pages/cart.dart';
-import 'package:bathu/pages/login_page.dart';
+import 'package:bathu/pages/login_dialog.dart';
 import 'package:bathu/pages/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +47,7 @@ class CustomAppBar extends StatelessWidget {
               InkWell(
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => LoginPage(),
+                    builder: (context) => LoginDialog(),
                   ),
                 ),
                 child: const Icon(Icons.person,
