@@ -1,11 +1,16 @@
 import 'package:bathu/pages/cart.dart';
-import 'package:bathu/pages/login_dialog.dart';
+
 import 'package:bathu/pages/profile.dart';
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
+class CustomAppBar extends StatefulWidget {
   const CustomAppBar({Key? key}) : super(key: key);
 
+  @override
+  State<CustomAppBar> createState() => _CustomAppBarState();
+}
+
+class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,8 +23,13 @@ class CustomAppBar extends StatelessWidget {
           },
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Icon(Icons.menu, color: Colors.grey, size: 25),
+            children: [
+              InkWell(
+                child: Icon(Icons.menu, color: Colors.grey, size: 25),
+                onTap: () {
+                  Scaffold.of(context).openDrawer();
+                },
+              ),
             ],
           ),
         ),
@@ -45,11 +55,57 @@ class CustomAppBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               InkWell(
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => LoginDialog(),
-                  ),
-                ),
+                onTap: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          contentPadding: EdgeInsets.zero,
+                          scrollable: true,
+                          title: Text(
+                            "LOGIN",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              letterSpacing: 1,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Gilroy-Bold',
+                            ),
+                          ),
+                          content: Stack(
+                            children: [
+                              Positioned(
+                                right: -15,
+                                left: -15,
+                                child: InkResponse(
+                                  onTap: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: CircleAvatar(
+                                    radius: 12,
+                                    child: Icon(
+                                      Icons.close,
+                                      size: 9,
+                                      color: Colors.white,
+                                    ),
+                                    backgroundColor: Colors.black,
+                                  ),
+                                ),
+                              ),
+                              Form(
+                                  child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Container(
+                                    height: 60,
+                                  )
+                                ],
+                              ))
+                            ],
+                          ),
+                        );
+                      });
+                },
                 child: const Icon(Icons.person,
                     color: Color(0xff1c1b1b), size: 20),
               ),
