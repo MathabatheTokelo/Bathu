@@ -25,7 +25,10 @@ class _BathuState extends State<Bathu> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Gilroy-Bold'),
+      theme: ThemeData(
+          appBarTheme: AppBarTheme(backgroundColor: Colors.black),
+          colorScheme: ColorScheme.light(primary: Colors.black),
+          fontFamily: 'Gilroy-Bold'),
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
@@ -38,7 +41,6 @@ class _BathuState extends State<Bathu> {
                 fontSize: 6,
                 letterSpacing: 0.5,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Gilroy-Bold',
               ),
             ),
           ),
@@ -76,11 +78,11 @@ class _BathuState extends State<Bathu> {
                   const Text(
                     "THE ORIGINAL.",
                     style: TextStyle(
-                        color: Color(0xff1c1b1b),
-                        fontSize: 10,
-                        letterSpacing: 4,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Gilroy-Bold'),
+                      color: Color(0xff1c1b1b),
+                      fontSize: 10,
+                      letterSpacing: 4,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 10),
                   HeadingTextWidget(st: "MESH EDITION - AFRICA'S SNEAKER."),
@@ -96,7 +98,6 @@ class _BathuState extends State<Bathu> {
                     "WHAT OUR CUSTOMERS SAY...",
                     style: TextStyle(
                         fontSize: 13,
-                        fontFamily: 'Gilroy-Bold',
                         fontWeight: FontWeight.bold,
                         letterSpacing: 4),
                   ),
