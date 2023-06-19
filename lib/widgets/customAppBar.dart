@@ -109,153 +109,158 @@ void aleReg(var context) {
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.white),
                 padding: EdgeInsets.fromLTRB(20, 30, 20, 10),
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Text(
-                        "REGISTER",
-                        style: TextStyle(
-                          color: Color(0xff1c1b1b),
-                          fontSize: 18,
-                          letterSpacing: 0,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Gilroy-Bold',
-                        ),
+                child: Column(
+                  children: [
+                    Text(
+                      "REGISTER",
+                      style: TextStyle(
+                        color: Color(0xff1c1b1b),
+                        fontSize: 18,
+                        letterSpacing: 0,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Gilroy-Bold',
                       ),
-                      SizedBox(height: 20),
-                      Text(
-                        "Please fill in the information below:",
-                        style: TextStyle(
-                          fontSize: 13,
-                          letterSpacing: .3,
-                          color: Color(0xff1c1b1b),
-                          fontWeight: FontWeight.bold,
-                        ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      "Please fill in the information below:",
+                      style: TextStyle(
+                        fontSize: 13,
+                        letterSpacing: .3,
+                        color: Color(0xff1c1b1b),
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(height: 15),
-                      Theme(
-                        data: Theme.of(context).copyWith(
-                            textSelectionTheme: TextSelectionThemeData(
-                                selectionHandleColor: Colors.black,
-                                selectionColor: Colors.black)),
-                        child: SizedBox(
-                          width: 335,
-                          height: 50,
-                          child: TextFormField(
-                            cursorColor: Color(0xff1c1b1b),
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(0)),
-                                label: Text(
-                                  "First Name",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      letterSpacing: 0,
-                                      fontFamily: 'Gilroy-Regular.ttf'),
-                                )),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      Theme(
-                        data: Theme.of(context).copyWith(
-                            textSelectionTheme: TextSelectionThemeData(
-                                selectionHandleColor: Colors.black,
-                                selectionColor: Colors.black)),
-                        child: SizedBox(
-                          width: 335,
-                          height: 50,
-                          child: TextFormField(
-                            cursorColor: Color(0xff1c1b1b),
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(0)),
-                                label: Text(
-                                  "Second Name",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      letterSpacing: 0,
-                                      fontFamily: 'Gilroy-Regular.ttf'),
-                                )),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      Theme(
-                        data: Theme.of(context).copyWith(
-                            textSelectionTheme: TextSelectionThemeData(
-                                selectionHandleColor: Colors.black,
-                                selectionColor: Colors.black)),
-                        child: SizedBox(
-                          width: 335,
-                          height: 50,
-                          child: TextFormField(
-                            cursorColor: Color(0xff1c1b1b),
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(0)),
-                                label: Text(
-                                  "Email",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      letterSpacing: 0,
-                                      fontFamily: 'Gilroy-Regular.ttf'),
-                                )),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      Theme(
-                        data: Theme.of(context).copyWith(
-                            textSelectionTheme: TextSelectionThemeData(
-                                selectionHandleColor: Colors.black,
-                                selectionColor: Colors.black)),
-                        child: SizedBox(
-                          width: 335,
-                          height: 50,
-                          child: TextFormField(
-                            cursorColor: Color(0xff1c1b1b),
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(0)),
-                                label: Text(
-                                  "Password",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      letterSpacing: 0,
-                                      fontFamily: 'Gilroy-Regular.ttf'),
-                                )),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      Center(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            primary: const Color(0xff1c1b1b),
-                            shape: BeveledRectangleBorder(
-                              borderRadius: BorderRadius.circular(1),
+                    ),
+                    SizedBox(
+                      height: 160,
+                      child: SingleChildScrollView(
+                        child: Column(children: [
+                          SizedBox(height: 15),
+                          Theme(
+                            data: Theme.of(context).copyWith(
+                                textSelectionTheme: TextSelectionThemeData(
+                                    selectionHandleColor: Colors.black,
+                                    selectionColor: Colors.black)),
+                            child: SizedBox(
+                              width: 335,
+                              height: 50,
+                              child: TextFormField(
+                                cursorColor: Color(0xff1c1b1b),
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(0)),
+                                    label: Text(
+                                      "First Name",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0,
+                                          fontFamily: 'Gilroy-Regular.ttf'),
+                                    )),
+                              ),
                             ),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 128.0, vertical: 5.0),
                           ),
-                          child: Text(
-                            "CREATE MY ACCOUNT",
-                            style: const TextStyle(
-                                fontSize: 10,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 2,
-                                fontFamily: 'Gilroy-Regular.ttf'),
+                          SizedBox(height: 15),
+                          Theme(
+                            data: Theme.of(context).copyWith(
+                                textSelectionTheme: TextSelectionThemeData(
+                                    selectionHandleColor: Colors.black,
+                                    selectionColor: Colors.black)),
+                            child: SizedBox(
+                              width: 335,
+                              height: 50,
+                              child: TextFormField(
+                                cursorColor: Color(0xff1c1b1b),
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(0)),
+                                    label: Text(
+                                      "Second Name",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0,
+                                          fontFamily: 'Gilroy-Regular.ttf'),
+                                    )),
+                              ),
+                            ),
                           ),
+                          SizedBox(height: 15),
+                          Theme(
+                            data: Theme.of(context).copyWith(
+                                textSelectionTheme: TextSelectionThemeData(
+                                    selectionHandleColor: Colors.black,
+                                    selectionColor: Colors.black)),
+                            child: SizedBox(
+                              width: 335,
+                              height: 50,
+                              child: TextFormField(
+                                cursorColor: Color(0xff1c1b1b),
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(0)),
+                                    label: Text(
+                                      "Email",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0,
+                                          fontFamily: 'Gilroy-Regular.ttf'),
+                                    )),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 15),
+                          Theme(
+                            data: Theme.of(context).copyWith(
+                                textSelectionTheme: TextSelectionThemeData(
+                                    selectionHandleColor: Colors.black,
+                                    selectionColor: Colors.black)),
+                            child: SizedBox(
+                              width: 335,
+                              height: 50,
+                              child: TextFormField(
+                                cursorColor: Color(0xff1c1b1b),
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(0)),
+                                    label: Text(
+                                      "Password",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0,
+                                          fontFamily: 'Gilroy-Regular.ttf'),
+                                    )),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 15),
+                        ]),
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        primary: const Color(0xff1c1b1b),
+                        shape: BeveledRectangleBorder(
+                          borderRadius: BorderRadius.circular(1),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 128.0, vertical: 1.0),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Create Account",
+                          style: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 2,
+                              fontFamily: 'Gilroy-Regular.ttf'),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],

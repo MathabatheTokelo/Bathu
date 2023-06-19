@@ -1,30 +1,38 @@
 import 'package:flutter/material.dart';
 
-class ProductDetails extends StatefulWidget {
-  @override
-  State<ProductDetails> createState() => _ProductDetailsState();
-}
+class ProductDetails extends StatelessWidget {
+  final String itemName;
+  final String itemDescription;
+  final double itemPrice;
+  final String imageUrl1;
+  final String imageUrl2;
+  final String imageUrl3;
 
-class _ProductDetailsState extends State<ProductDetails> {
+  ProductDetails({
+    required this.itemName,
+    required this.itemDescription,
+    required this.itemPrice,
+    required this.imageUrl1,
+    required this.imageUrl2,
+    required this.imageUrl3,
+  });
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        toolbarHeight: 18,
-        title: const Center(
-          child: Text(
-            "WISHING YOU ALL THE BEST FOR 2023 | FIND A STORE | EMAIL US ON INFO@BATHU.CO.ZA",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 6,
-              letterSpacing: 0.5,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Gilroy-Bold',
+    return Padding(
+      padding: EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+            child: Image.network(
+              imageUrl1,
+              height: 200,
+              width: 200,
+              fit: BoxFit.cover,
             ),
           ),
-        ),
-        elevation: 10,
+        ],
       ),
     );
   }

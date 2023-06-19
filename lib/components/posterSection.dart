@@ -10,19 +10,19 @@ class _PosterSectionState extends State<PosterSection> {
   @override
   var itemList = [
     CarouselItem(
-      image: const AssetImage("assets/images/headerOne4.png"),
+      image: const AssetImage("assets/images/carousel/4.png"),
       onImageTap: (i) {},
     ),
     CarouselItem(
-      image: const AssetImage("assets/images/headerOne2.png"),
+      image: const AssetImage("assets/images/carousel/2.png"),
       onImageTap: (i) {},
     ),
     CarouselItem(
-      image: const AssetImage("assets/images/headerOne1.png"),
+      image: const AssetImage("assets/images/carousel/1.png"),
       onImageTap: (i) {},
     ),
     CarouselItem(
-      image: const AssetImage("assets/images/headerOne3.png"),
+      image: const AssetImage("assets/images/carousel/3.png"),
       onImageTap: (i) {},
     )
   ];

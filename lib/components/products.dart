@@ -23,7 +23,7 @@ class _ProductsState extends State<Products> {
       itemBuilder: (BuildContext context, int index) {
         return SingleProduct(
           ProductName: widget.productss[index]['name'],
-          ProductPicture: widget.productss[index]['picture'],
+          ProductPicture1: widget.productss[index]['picture'],
           Price: widget.productss[index]['price'],
           Review: widget.productss[index]['reviews'],
         );
@@ -35,12 +35,16 @@ class _ProductsState extends State<Products> {
 class SingleProduct extends StatelessWidget {
   double value = 5.0;
   var ProductName;
-  var ProductPicture;
+  var ProductPicture1;
+  var ProductPicture2;
+  var ProductPicture3;
   var Review;
   var Price;
   SingleProduct(
       {Key? key,
-      this.ProductPicture,
+      this.ProductPicture1,
+      this.ProductPicture2,
+      this.ProductPicture3,
       this.ProductName,
       this.Review,
       this.Price})
@@ -54,7 +58,13 @@ class SingleProduct extends StatelessWidget {
           child: InkWell(
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => ProductDetails(),
+                builder: (context) => ProductDetails(
+                    imageUrl1: ProductPicture1,
+                    imageUrl2: ProductPicture2,
+                    imageUrl3: ProductPicture3,
+                    itemName: ProductName,
+                    itemPrice: Price,
+                    itemDescription: "Des"),
               ),
             ),
             child: GridTile(
@@ -114,7 +124,7 @@ class SingleProduct extends StatelessWidget {
                   ],
                 ),
               ),
-              child: Image.asset(ProductPicture, fit: BoxFit.cover),
+              child: Image.asset(ProductPicture1, fit: BoxFit.cover),
             ),
           ),
         ),

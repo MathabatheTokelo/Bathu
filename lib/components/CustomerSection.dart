@@ -10,19 +10,19 @@ class _CustomerSectionState extends State<CustomerSection> {
   @override
   var itemList = [
     CarouselItem(
-        image: const AssetImage("assets/images/imageFour1.png"),
+        image: const AssetImage("assets/images/testimonials/1.png"),
         onImageTap: (i) {},
         boxDecoration: BoxDecoration(color: Colors.white)),
     CarouselItem(
-      image: const AssetImage("assets/images/imageFour2.png"),
+      image: const AssetImage("assets/images/testimonials/2.png"),
       onImageTap: (i) {},
     ),
     CarouselItem(
-      image: const AssetImage("assets/images/imageFour3.png"),
+      image: const AssetImage("assets/images/testimonials/3.png"),
       onImageTap: (i) {},
     ),
     CarouselItem(
-      image: const AssetImage("assets/images/imageFour4.png"),
+      image: const AssetImage("assets/images/testimonials/4.png"),
       onImageTap: (i) {},
     )
   ];
