@@ -24,6 +24,8 @@ class _ProductsState extends State<Products> {
         return SingleProduct(
           ProductName: widget.productss[index]['name'],
           ProductPicture1: widget.productss[index]['picture1'],
+          ProductPicture2: widget.productss[index]['picture2'],
+          ProductPicture3: widget.productss[index]['picture3'],
           Price: widget.productss[index]['price'],
           Review: widget.productss[index]['reviews'],
         );

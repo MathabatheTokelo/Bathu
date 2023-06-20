@@ -287,7 +287,7 @@ class ProductList {
 
   var productList3 = [
     {
-      "name": "JOURNEY REFINED - CRYSTAL WHITE",
+      "name": "JOURNEY REFINED - CRYSTAL",
       "picture1": "assets/images/shoes/journey/white/1.png",
       "picture2": "assets/images/shoes/journey/white/2.png",
       "picture3": "assets/images/shoes/journey/white/3.png",
@@ -315,25 +315,25 @@ class ProductList {
   var productList4 = [
     {
       "name": "MOONLIGHT SLIDER - BLACK",
-      "picture1": "assets/images/shoes/journey/white/1.png",
-      "picture2": "assets/images/shoes/journey/white/2.png",
-      "picture3": "assets/images/shoes/journey/white/3.png",
+      "picture1": "assets/images/shoes/moonlight/black/1.png",
+      "picture2": "assets/images/shoes/moonlight/black/2.png",
+      "picture3": "assets/images/shoes/moonlight/black/3.png",
       "reviews": 1,
       "price": 650,
     },
     {
       "name": "MOONLIGHT SLIDER - PURPLE",
-      "picture1": "assets/images/shoes/journey/purple/1.png",
-      "picture2": "assets/images/shoes/journey/purple/2.png",
-      "picture3": "assets/images/shoes/journey/purple/3.png",
+      "picture1": "assets/images/shoes/moonlight/purple/1.png",
+      "picture2": "assets/images/shoes/moonlight/purple/2.png",
+      "picture3": "assets/images/shoes/moonlight/purple/3.png",
       "reviews": 1,
       "price": 650,
     },
     {
       "name": "MOONLIGHT SLIDER - NUDE",
-      "picture1": "assets/images/shoes/journey/nude/1.png",
-      "picture2": "assets/images/shoes/journey/nude/2.png",
-      "picture3": "assets/images/shoes/journey/nude/3.png",
+      "picture1": "assets/images/shoes/moonlight/pink/1.png",
+      "picture2": "assets/images/shoes/moonlight/pink/2.png",
+      "picture3": "assets/images/shoes/moonlight/pink/3.png",
       "reviews": 1,
       "price": 650,
     },

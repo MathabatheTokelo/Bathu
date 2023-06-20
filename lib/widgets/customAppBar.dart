@@ -5,8 +5,6 @@ import 'package:bathu/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatefulWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
-
   @override
   State<CustomAppBar> createState() => _CustomAppBarState();
 }

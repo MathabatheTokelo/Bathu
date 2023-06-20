@@ -48,7 +48,10 @@ class _BathuState extends State<Bathu> {
         ),
         body: Column(
           children: [
-            const CustomAppBar(),
+            Container(
+              height: 90,
+              child: CustomAppBar(),
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(children: [
@@ -61,7 +64,7 @@ class _BathuState extends State<Bathu> {
                     child: Products(productss: products.productList1),
                   ),
                   const SizedBox(height: 30),
-                  Button(st: "VIEW ALL PRODUCTS"),
+                  Button(st: "VIEW ALL PRODUCTS", pList: products.productList1),
                   const SizedBox(height: 30),
                   Column(
                     children: [
@@ -92,7 +95,9 @@ class _BathuState extends State<Bathu> {
                     child: Products(productss: products.productList2),
                   ),
                   const SizedBox(height: 30),
-                  Button(st: "VIEW ALL MESH EDITION SNEAKERS"),
+                  Button(
+                      st: "VIEW ALL MESH EDITION SNEAKERS",
+                      pList: products.productList2),
                   const SizedBox(height: 35),
                   const Text(
                     "WHAT OUR CUSTOMERS SAY...",

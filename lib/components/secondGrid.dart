@@ -1,21 +1,26 @@
+import 'package:bathu/models/productList.dart';
 import 'package:flutter/material.dart';
+
+import '../pages/fullProducts.dart';
 
 class SecondGrid extends StatefulWidget {
   @override
+  var p = ProductList();
+  SecondGrid();
   State<SecondGrid> createState() => _SecondGridState();
 }
 
 class GridClass {
   String name;
   String picture;
-  String nextPage;
+  var nextPage;
   String slogan;
 
   GridClass(
       {required this.name,
       required this.picture,
       required this.slogan,
-      required this.nextPage});
+      this.nextPage});
 }
 
 class _SecondGridState extends State<SecondGrid> {
@@ -23,17 +28,18 @@ class _SecondGridState extends State<SecondGrid> {
       name: "SKY",
       picture: "assets/images/secondCarousel/1.jpg",
       slogan: "BEYOND YOUR LIMIT",
-      nextPage: "  ");
+      nextPage: " ");
   var two = GridClass(
       name: "SLIDER - MOONLIGHT",
       picture: "assets/images/secondCarousel/2.jpg",
       slogan: "ORIGINAL JOY",
-      nextPage: "  ");
+      nextPage: " ");
   var three = GridClass(
       name: "JOURNEY REDEFINED",
       picture: "assets/images/secondCarousel/3.jpg",
       slogan: "AUTUMN BREEZE",
-      nextPage: "  ");
+      nextPage: " ");
+
   late var llist = [one, two, three];
 
   @override
@@ -81,7 +87,33 @@ class _SecondGridState extends State<SecondGrid> {
                       const SizedBox(height: 50),
                       const SizedBox(width: 200),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          if (index == 0) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList1,
+                                      )),
+                            );
+                          } else if (index == 1) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList4,
+                                      )),
+                            );
+                          } else {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList3,
+                                      )),
+                            );
+                          }
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.white70,
                           onPrimary: Colors.black87,
@@ -152,7 +184,33 @@ class _SecondGridState extends State<SecondGrid> {
                       const SizedBox(height: 50),
                       const SizedBox(width: 200),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          if (index == 0) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList1,
+                                      )),
+                            );
+                          } else if (index == 1) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList4,
+                                      )),
+                            );
+                          } else {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FullProducts(
+                                        p: widget.p.productList3,
+                                      )),
+                            );
+                          }
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.white70,
                           onPrimary: Colors.black87,
