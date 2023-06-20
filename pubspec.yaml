@@ -72,57 +72,123 @@ flutter:
     - assets/images/secondCarousel/2.jpg
     - assets/images/secondCarousel/3.jpg
     #Journey
-    - assets/images/shoes/journey/express/l.png
+    - assets/images/shoes/journey/express/1.png
     - assets/images/shoes/journey/express/2.png
     - assets/images/shoes/journey/express/3.png
-    - assets/images/shoes/journey/floral/l.png
+    - assets/images/shoes/journey/floral/1.png
     - assets/images/shoes/journey/floral/2.png
     - assets/images/shoes/journey/floral/3.png
-    - assets/images/shoes/journey/white/l.png
+    - assets/images/shoes/journey/white/1.png
     - assets/images/shoes/journey/white/2.png
     - assets/images/shoes/journey/white/3.png
     #MoonLight
-    - assets/images/shoes/moonlight/black/l.png
+    - assets/images/shoes/moonlight/black/1.png
     - assets/images/shoes/moonlight/black/2.png
     - assets/images/shoes/moonlight/black/3.png
-    - assets/images/shoes/moonlight/pink/l.png
+    - assets/images/shoes/moonlight/pink/1.png
     - assets/images/shoes/moonlight/pink/2.png
     - assets/images/shoes/moonlight/pink/3.png
-    - assets/images/shoes/moonlight/purple/l.png
+    - assets/images/shoes/moonlight/purple/1.png
     - assets/images/shoes/moonlight/purple/2.png
     - assets/images/shoes/moonlight/purple/3.png
+    #Mesh Ed
+    - assets/images/shoes/mesh/berry/1.png
+    - assets/images/shoes/mesh/berry/2.png
+    - assets/images/shoes/mesh/berry/3.png
+    - assets/images/shoes/mesh/black/1.png
+    - assets/images/shoes/mesh/black/2.png
+    - assets/images/shoes/mesh/black/3.png
+    - assets/images/shoes/mesh/blackNWhite/1.png
+    - assets/images/shoes/mesh/blackNWhite/2.png
+    - assets/images/shoes/mesh/blackNWhite/3.png
+    - assets/images/shoes/mesh/blue/1.png
+    - assets/images/shoes/mesh/blue/2.png
+    - assets/images/shoes/mesh/blue/3.png
+    - assets/images/shoes/mesh/green/1.png
+    - assets/images/shoes/mesh/grey/1.png
+    - assets/images/shoes/mesh/grey/2.png
+    - assets/images/shoes/mesh/grey/3.png
+    - assets/images/shoes/mesh/halfBlack/1.png
+    - assets/images/shoes/mesh/halfBlack/3.png
+    - assets/images/shoes/mesh/halfBlue/1.png
+    - assets/images/shoes/mesh/halfBlue/2.png
+    - assets/images/shoes/mesh/halfBlue/3.png    
+    - assets/images/shoes/mesh/halfGreen/1.png
+    - assets/images/shoes/mesh/halfGreen/2.png
+    - assets/images/shoes/mesh/halfGreen/3.png    
+    - assets/images/shoes/mesh/halfGrey/1.png
+    - assets/images/shoes/mesh/halfGrey/2.png
+    - assets/images/shoes/mesh/halfGrey/3.png
+    - assets/images/shoes/mesh/halfOrange/1.png
+    - assets/images/shoes/mesh/halfOrange/2.png
+    - assets/images/shoes/mesh/halfOrange/3.png    
+    - assets/images/shoes/mesh/halfPink/1.png
+    - assets/images/shoes/mesh/halfPink/3.png
+    - assets/images/shoes/mesh/halfRed/1.png
+    - assets/images/shoes/mesh/halfRed/2.png
+    - assets/images/shoes/mesh/halfRed/3.png
+    - assets/images/shoes/mesh/halfWhite/1.png
+    - assets/images/shoes/mesh/halfWhite/2.png
+    - assets/images/shoes/mesh/halfWhite/3.png
+    - assets/images/shoes/mesh/halfYellow/1.png
+    - assets/images/shoes/mesh/halfYellow/2.png
+    - assets/images/shoes/mesh/halfYellow/3.png
+    - assets/images/shoes/mesh/hazel/1.png
+    - assets/images/shoes/mesh/hazel/2.png
+    - assets/images/shoes/mesh/hazel/3.png
+    - assets/images/shoes/mesh/lightBlue/1.png
+    - assets/images/shoes/mesh/lightBlue/2.png
+    - assets/images/shoes/mesh/lightBlue/3.png
+    - assets/images/shoes/mesh/orange/1.png
+    - assets/images/shoes/mesh/pink/1.png
+    - assets/images/shoes/mesh/pink/3.png
+    - assets/images/shoes/mesh/red/1.png
+    - assets/images/shoes/mesh/red/2.png
+    - assets/images/shoes/mesh/red/3.png
+    - assets/images/shoes/mesh/redNWhite/1.png
+    - assets/images/shoes/mesh/redNWhite/2.png
+    - assets/images/shoes/mesh/redNWhite/3.png
+    - assets/images/shoes/mesh/rosePink/1.png
+    - assets/images/shoes/mesh/rosePink/2.png
+    - assets/images/shoes/mesh/rosePink/3.png
+    - assets/images/shoes/mesh/white/1.png
+    - assets/images/shoes/mesh/white/2.png
+    - assets/images/shoes/mesh/white/3.png
+    - assets/images/shoes/mesh/yellow/1.png
+    - assets/images/shoes/mesh/yellow/2.png
+    - assets/images/shoes/mesh/yellow/3.png   
     #SKY Ed
-    - assets/images/shoes/sky/black/l.png
+    - assets/images/shoes/sky/black/1.png
     - assets/images/shoes/sky/black/2.png
     - assets/images/shoes/sky/black/3.png
-    - assets/images/shoes/sky/blue/l.png
+    - assets/images/shoes/sky/blue/1.png
     - assets/images/shoes/sky/blue/2.png
     - assets/images/shoes/sky/blue/3.png
-    - assets/images/shoes/sky/green/l.png
+    - assets/images/shoes/sky/green/1.png
     - assets/images/shoes/sky/green/2.png
     - assets/images/shoes/sky/green/3.png
-    - assets/images/shoes/sky/grey/l.png
+    - assets/images/shoes/sky/grey/1.png
     - assets/images/shoes/sky/grey/2.png
     - assets/images/shoes/sky/grey/3.png
-    - assets/images/shoes/sky/lightBlue/l.png
+    - assets/images/shoes/sky/lightBlue/1.png
     - assets/images/shoes/sky/lightBlue/2.png
     - assets/images/shoes/sky/lightBlue/3.png
-    - assets/images/shoes/sky/lotus/l.png
+    - assets/images/shoes/sky/lotus/1.png
     - assets/images/shoes/sky/lotus/2.png
     - assets/images/shoes/sky/lotus/3.png
-    - assets/images/shoes/sky/orange/l.png
+    - assets/images/shoes/sky/orange/1.png
     - assets/images/shoes/sky/orange/2.png
     - assets/images/shoes/sky/orange/3.png
-    - assets/images/shoes/sky/pink/l.png
+    - assets/images/shoes/sky/pink/1.png
     - assets/images/shoes/sky/pink/2.png
     - assets/images/shoes/sky/pink/3.png
-    - assets/images/shoes/sky/red/l.png
+    - assets/images/shoes/sky/red/1.png
     - assets/images/shoes/sky/red/2.png
     - assets/images/shoes/sky/red/3.png
-    - assets/images/shoes/sky/white/l.png
+    - assets/images/shoes/sky/white/1.png
     - assets/images/shoes/sky/white/2.png
     - assets/images/shoes/sky/white/3.png
-    - assets/images/shoes/sky/yellow/l.png
+    - assets/images/shoes/sky/yellow/1.png
     - assets/images/shoes/sky/yellow/2.png
     - assets/images/shoes/sky/yellow/3.png
     - assets/images/hist/1.png

@@ -2,7 +2,7 @@ class AboutList {
   var List1 = [
     {
       "name": "2015",
-      "picture": "assets/images/testimonials/1.png",
+      "picture": "assets/images/hist/1.png",
       "firstLine": "A VISION FOR AN AFRICAN SNEAKER BRAND.",
       "SecondLine": "THE VERY FIRST MESH EDITION",
       "ThirdLine": "SNEAKER",
@@ -28,7 +28,7 @@ class AboutList {
     },
     {
       "name": "2018",
-      "picture": "assets/images/testimonials/2.png",
+      "picture": "assets/images/hist/2.png",
       "firstLine": "BATHU STORE #1",
       "SecondLine": "NEWTOWN STORE OPENS",
       "ThirdLine": " ",
@@ -51,7 +51,7 @@ class AboutList {
     },
     {
       "name": "2020",
-      "picture": "assets/images/testimonials/3.png",
+      "picture": "assets/images/hist/3.png",
       "firstLine": "YAMASUPA!",
       "SecondLine": "BATHU'S DEFINING YEAR",
       "ThirdLine": " ",
@@ -73,7 +73,7 @@ class AboutList {
     },
     {
       "name": "2021",
-      "picture": "assets/images/testimonials/4.png",
+      "picture": "assets/images/hist/4.png",
       "firstLine": "TO THE SKY!",
       "SecondLine": "A TRULY AFRICAN BRAND",
       "ThirdLine": " ",
@@ -97,7 +97,7 @@ class AboutList {
     },
     {
       "name": "2023",
-      "picture": "assets/images/testimonials/5.png",
+      "picture": "assets/images/hist/5.png",
       "firstLine": "AN INNOVATION IN",
       "SecondLine": "SNEAKER TECHNOLOGY",
       "ThirdLine": " ",

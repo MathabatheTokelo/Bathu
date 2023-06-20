@@ -23,7 +23,7 @@ class _ProductsState extends State<Products> {
       itemBuilder: (BuildContext context, int index) {
         return SingleProduct(
           ProductName: widget.productss[index]['name'],
-          ProductPicture1: widget.productss[index]['picture'],
+          ProductPicture1: widget.productss[index]['picture1'],
           Price: widget.productss[index]['price'],
           Review: widget.productss[index]['reviews'],
         );
