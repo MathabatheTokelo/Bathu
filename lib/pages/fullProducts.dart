@@ -8,6 +8,7 @@ class FullProducts extends StatelessWidget {
   var p;
 
   FullProducts({this.p});
+  final GlobalKey<ScaffoldState> _key = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,11 +29,12 @@ class FullProducts extends StatelessWidget {
         ),
         elevation: 10,
       ),
+      key: _key,
       body: Column(
         children: [
           Container(
             height: 90,
-            child: CustomAppBar(),
+            child: CustomAppBar(draw: _key.currentState!.openDrawer),
           ),
           Container(
             height: 30,

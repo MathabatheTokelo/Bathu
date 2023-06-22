@@ -11,10 +11,12 @@ import 'package:flutter/material.dart';
 import 'components/history.dart';
 
 void main() {
-  runApp(Bathu());
+  runApp(const Bathu());
 }
 
 class Bathu extends StatefulWidget {
+  const Bathu({Key? key}) : super(key: key);
+
   @override
   State<Bathu> createState() => _BathuState();
 }
@@ -22,6 +24,7 @@ class Bathu extends StatefulWidget {
 class _BathuState extends State<Bathu> {
   ProductList products = ProductList();
 
+  final GlobalKey<ScaffoldState> _key = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +33,7 @@ class _BathuState extends State<Bathu> {
           colorScheme: ColorScheme.light(primary: Colors.black),
           fontFamily: 'Gilroy-Bold'),
       home: Scaffold(
+        key: _key,
         appBar: AppBar(
           backgroundColor: Colors.black,
           toolbarHeight: 18,
@@ -46,11 +50,14 @@ class _BathuState extends State<Bathu> {
           ),
           elevation: 10,
         ),
+        drawer: Drawer(backgroundColor: Colors.white60),
         body: Column(
           children: [
             Container(
               height: 90,
-              child: CustomAppBar(),
+              child: CustomAppBar(draw: () {
+                _key.currentState!.openDrawer();
+              }),
             ),
             Expanded(
               child: SingleChildScrollView(

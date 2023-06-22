@@ -5,6 +5,10 @@ import 'package:bathu/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatefulWidget {
+  final Function draw;
+
+  CustomAppBar({required this.draw});
+
   @override
   State<CustomAppBar> createState() => _CustomAppBarState();
 }
@@ -16,23 +20,18 @@ class _CustomAppBarState extends State<CustomAppBar> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const SizedBox(width: 13.5),
-        InkWell(
-          onTap: () {
-            const Drawer();
-          },
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              InkWell(
-                child: Icon(Icons.menu, color: Colors.grey, size: 25),
-                onTap: () {
-                  {
-                    Scaffold.of(context).openDrawer();
-                  }
-                },
-              ),
-            ],
-          ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            InkWell(
+              child: Icon(Icons.menu, color: Colors.grey, size: 25),
+              onTap: () {
+                {
+                  widget.draw();
+                }
+              },
+            ),
+          ],
         ),
         const SizedBox(width: 70),
         Row(
