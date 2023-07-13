@@ -25,22 +25,20 @@ class GridClass {
 
 class _SecondGridState extends State<SecondGrid> {
   var one = GridClass(
-      name: "SKY",
-      picture: "assets/images/secondCarousel/1.jpg",
-      slogan: "BEYOND YOUR LIMIT",
+      name: "Bathu Adults",
+      picture: "assets/images/secondCarousel/5.jpg",
+      slogan: "Easier to shop by category",
       nextPage: " ");
   var two = GridClass(
-      name: "SLIDER - MOONLIGHT",
-      picture: "assets/images/secondCarousel/2.jpg",
-      slogan: "ORIGINAL JOY",
-      nextPage: " ");
-  var three = GridClass(
-      name: "JOURNEY REDEFINED",
-      picture: "assets/images/secondCarousel/3.jpg",
-      slogan: "AUTUMN BREEZE",
+      name: "Bathu Kids",
+      picture: "assets/images/secondCarousel/6.jpg",
+      slogan: "Easier to shop by category",
       nextPage: " ");
 
-  late var llist = [one, two, three];
+  late var llist = [
+    one,
+    two,
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -67,18 +65,18 @@ class _SecondGridState extends State<SecondGrid> {
                     children: [
                       SizedBox(height: 250),
                       Text(
-                        llist[index].slogan,
+                        llist[index].name,
                         style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 18,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Gilroy-Bold',
                             letterSpacing: 2),
                       ),
                       Text(
-                        llist[index].name,
+                        llist[index].slogan,
                         style: const TextStyle(
-                            fontSize: 18,
+                            fontSize: 12,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Gilroy-Bold',
@@ -96,20 +94,12 @@ class _SecondGridState extends State<SecondGrid> {
                                         p: widget.p.productList1,
                                       )),
                             );
-                          } else if (index == 1) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => FullProducts(
-                                        p: widget.p.productList4,
-                                      )),
-                            );
                           } else {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => FullProducts(
-                                        p: widget.p.productList3,
+                                        p: widget.p.productList2,
                                       )),
                             );
                           }

@@ -35,7 +35,7 @@ class _ProductsState extends State<Products> {
 }
 
 class SingleProduct extends StatelessWidget {
-  double value = 5.0;
+  var value = 5;
   var ProductName;
   var ProductPicture1;
   var ProductPicture2;

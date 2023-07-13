@@ -1,11 +1,8 @@
 import 'package:bathu/pages/cart.dart';
-
-import 'package:bathu/pages/profile.dart';
-import 'package:bathu/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatefulWidget {
-  final Function draw;
+  var draw;
 
   CustomAppBar({required this.draw});
 
@@ -19,37 +16,18 @@ class _CustomAppBarState extends State<CustomAppBar> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const SizedBox(width: 13.5),
+        SizedBox(width: 120),
         Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            InkWell(
-              child: Icon(Icons.menu, color: Colors.grey, size: 25),
-              onTap: () {
-                {
-                  widget.draw();
-                }
-              },
+            Image.asset(
+              'assets/images/logo.png',
+              fit: BoxFit.cover,
+              width: 100,
             ),
           ],
         ),
-        const SizedBox(width: 70),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 100,
-              child: Image.asset(
-                'assets/images/logo.png',
-                fit: BoxFit.fill,
-                alignment: Alignment.center,
-                height: 100,
-                width: 145,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(width: 20),
+        const SizedBox(width: 60),
         Container(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
